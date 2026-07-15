@@ -455,35 +455,34 @@ hr {
         text-align: center;
     }
 
-}
+    .section {
+        padding: 20px 10px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 
-.section {
-    padding: 20px 10px;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
+    .card {
+        width: 100%;
+    }
 
-.card {
-    width: 100%;
-}
+    .card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
 
-.card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-}
+    .card-content h3 {
+        min-height: auto;
+        font-size: 18px;
+    }
 
-.card-content h3 {
-    min-height: auto;
-    font-size: 18px;
-}
+    .card-info {
+        display: flex;
+        justify-content: space-between;
+    }
 
-.card-info {
-    display: flex;
-    justify-content: space-between;
-}
-
-.card-info span {
-    display: inline;
-    font-size: 14px;
+    .card-info span {
+        display: inline;
+        font-size: 14px;
+    }
 }
