@@ -1,0 +1,317 @@
+/* ==========================
+   Reset
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ==========================
+   Navbar
+========================== */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: #141414;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 40px;
+    color: #E50914;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.menu a:hover {
+    color: #E50914;
+}
+
+/* ==========================
+   Sections
+========================== */
+
+.section {
+    width: 95%;
+    margin: 15px auto;
+    /* margin-bottom: 10px; */
+}
+
+.section h2 {
+    margin-left: 4px;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* ==========================
+   Common Card
+========================== */
+
+.card-content {
+    background: #181818;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.card-content:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(229, 9, 20, .5);
+}
+
+.card-content h3 {
+    margin: 15px 15px 10px;
+}
+
+.card-content p,
+.card-content span {
+    margin: 8px 15px;
+    color: #ccc;
+}
+
+.movie-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    margin: 15px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #E50914;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: #b20710;
+}
+
+/* ==========================
+   Welcome
+========================== */
+
+.welcome-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.welcome-row .card-content {
+    padding: 30px;
+    text-align: center;
+}
+
+.welcome-row h3 {
+    margin-bottom: 15px;
+}
+
+/* ==========================
+   Continue Watching
+========================== */
+
+.timeline-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.timeline-row img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.timeline-row .card-content {
+    padding-bottom: 20px;
+}
+
+.timeline-row h3 {
+    margin-top: 18px;
+}
+
+.timeline-row progress {
+    width: 92%;
+    height: 8px;
+    margin: 15px;
+}
+
+/* ==========================
+   Collection
+========================== */
+
+.collection-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.collection-row .card-content {
+    width: 19%;
+    background: #1e1e1e;
+    border-radius: 12px;
+    padding: 25px 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.collection-row h3 {
+    margin-bottom: 18px;
+    margin-bottom: 18px;
+
+}
+
+
+.collection-row p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffd700;
+    margin-bottom: 18px;
+}
+
+.collection-row span {
+    font-size: 15px;
+}
+
+/* ==========================
+   Statistics
+========================== */
+
+.stats-row {
+    display: flex;
+    gap: 20px;
+}
+
+.stats-row .card-content {
+    flex: 1;
+    background: #1e1e1e;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    min-height: 170px;
+}
+
+.stats-row h3 {
+    margin-bottom: 15px;
+}
+
+.stats-row p {
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+
+.stats-row progress {
+    width: 90%;
+    height: 8px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+/* ==========================
+   Recommended
+========================== */
+
+.recommend-row {
+    display: flex;
+    justify-content: center;
+}
+
+.recommend-row .movie-link {
+    width: 360px;
+}
+
+.recommend-row img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.recommend-row .card-content {
+    overflow: hidden;
+    padding: 15px;
+}
+
+.recommend-row img {
+    border-radius: 12px 12px 0 0;
+}
+
+.recommend-row h3 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.recommend-row p,
+.recommend-row span {
+    font-size: 18px;
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+
+
+
+footer {
+    margin-top: 60px;
+    background: #111;
+    text-align: center;
+    padding: 30px;
+}
+
+footer h2 {
+    color: #E50914;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #aaa;
+}
+
+.recommend-row button {
+    width: 95%;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.mylist-btn {
+    background: #333;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.mylist-btn:hover {
+    background: #555;
+}

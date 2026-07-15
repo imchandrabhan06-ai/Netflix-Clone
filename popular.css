@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #141414;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 40px;
+    color: #E50914;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.menu a:hover {
+    color: #E50914;
+}
+
+.latest-news {
+    padding: 60px;
+    background: #111;
+}
+
+.latest-news h2 {
+    font-size: 38px;
+    margin-bottom: 35px;
+    color: #fff;
+}
+
+.news-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.news-card {
+    background: #181818;
+    padding: 25px;
+    border-radius: 12px;
+    transition: .3s;
+}
+
+.news-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(229, 9, 20, .5);
+}
+
+.news-card h3 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.news-card p {
+    color: #bbb;
+    line-height: 28px;
+}
+
+
+.featured-update {
+    background: linear-gradient(90deg, #E50914, #5a0505, #111);
+    padding: 35px 60px;
+    margin: 50px;
+    border-radius: 15px;
+}
+
+.featured-update h2 {
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.featured-update p {
+    font-size: 18px;
+    line-height: 32px;
+    color: #f5f5f5;
+}
+
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #E50914;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #b20710;
+}
+
+.offer {
+    background: #111;
+    padding: 60px;
+    border-left: 5px solid #E50914;
+}
+
+.offer h2 {
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.offer h3 {
+    color: #E50914;
+    margin: 15px 0;
+    font-size: 28px;
+}
+
+.offer p {
+    color: #ddd;
+    line-height: 35px;
+    font-size: 20px;
+}
+
+.trending-today {
+    background: #000;
+    padding: 60px;
+}
+
+.trending-today h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.trending-today p {
+    color: #ddd;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.trend-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #E50914;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.trend-btn:hover {
+    background: #b20710;
+}
+
+.offer-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 30px;
+    background: #E50914;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    border: none;
+    transition: 0.3s;
+}
+
+.offer-btn:hover {
+    background: #b20710;
+}
+
+.news-card {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    background: #111;
+    padding: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer h2 {
+    color: #E50914;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #bbb;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+footer hr {
+    border: 1px solid #333;
+    margin: 20px auto;
+    width: 80%;
+}
+
+footer strong {
+    color: #fff;
+}
