@@ -12,7 +12,6 @@ body {
     background-repeat: no-repeat;
     min-height: 100vh;
     color: white;
-
 }
 
 .features {
@@ -36,7 +35,6 @@ body {
     font-size: 24px;
     margin: 18px 0;
 }
-
 
 body::before {
     content: "";
